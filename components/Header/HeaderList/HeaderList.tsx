@@ -1,14 +1,9 @@
 // *Import Components
-import {
-	BasketIcon,
-	FavoritIcon,
-	GlobsIcon
-} from '../../../assets/icons/HeaderIcon'
+import { BasketIcon, UserIcon } from '../../../assets/icons/HeaderIcon'
 import {
 	HeaderTopList,
 	HeaderTopItem,
 	HeaderTopItemText,
-	HeaderTopSignIn,
 	HeaderTopWrepper
 } from './Style'
 
@@ -17,19 +12,14 @@ function HeaderList() {
 		<HeaderTopWrepper>
 			<HeaderTopList>
 				<HeaderTopItem>
-					<GlobsIcon />
-					<HeaderTopItemText>Русский</HeaderTopItemText>
+					<BasketIcon width='24' height='24' color='#3D3E44' />
+					<HeaderTopItemText>Корзина</HeaderTopItemText>
 				</HeaderTopItem>
 				<HeaderTopItem>
-					<FavoritIcon />
-					<HeaderTopItemText>Избранное</HeaderTopItemText>
-				</HeaderTopItem>
-				<HeaderTopItem>
-					<BasketIcon />
+					<UserIcon width='24' height='24' color='#3D3E44' />
 					<HeaderTopItemText>Корзина</HeaderTopItemText>
 				</HeaderTopItem>
 			</HeaderTopList>
-			<HeaderTopSignIn>Войти</HeaderTopSignIn>
 		</HeaderTopWrepper>
 	)
 }
