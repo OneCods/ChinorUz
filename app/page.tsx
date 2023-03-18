@@ -7,7 +7,7 @@ function Page() {
 	return (
 		<>
 			<Header />
-			{/* <Hero /> */}
+			<Hero />
 			<GlobalStyle />
 		</>
 	)

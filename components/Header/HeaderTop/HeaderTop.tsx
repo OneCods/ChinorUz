@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import headerTopData from '../../../data/headerTop'
+import {headerTopData} from '../../../data/headerData'
 import { Container } from '../../Container/Container'
 import {
 	HeaderTopCall,
@@ -30,7 +30,7 @@ function HeaderTop() {
 						<Link href={'/'}>
 							<TelegramIcon width='24' height='24' color='#bcbcc6' />
 						</Link>
-						<HeaderTopCall>+998900431160</HeaderTopCall>
+						<HeaderTopCall href='tel:+99890'>+998900431160</HeaderTopCall>
 					</HeaderTopRight>
 				</HeaderTopWrap>
 			</Container>

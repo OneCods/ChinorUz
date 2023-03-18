@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: sans-serif;
+    font-family: 'Exo', sans-serif;
   }
 
   ul {
@@ -22,5 +22,6 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     display: inline-block;
+    text-decoration: none;
   }
 `

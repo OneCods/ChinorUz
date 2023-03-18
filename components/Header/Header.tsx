@@ -25,9 +25,9 @@ function Header() {
 						<HeaderSearch />
 						<HeaderList />
 					</HeaderWrapTop>
-					{/* <HeaderNav /> */}
 				</Container>
 			</HeaderWrap>
+			<HeaderNav />
 		</>
 	)
 }
