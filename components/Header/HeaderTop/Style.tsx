@@ -2,6 +2,10 @@ import styled from 'styled-components'
 
 export const HeaderTopWrapper = styled.div`
 	border-bottom: 1px solid #f1f1f6;
+
+	@media only screen and (max-width: 1250px) {
+		display: none;
+	}
 `
 
 export const HeaderTopWrap = styled.div`
