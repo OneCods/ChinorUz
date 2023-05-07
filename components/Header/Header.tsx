@@ -28,7 +28,7 @@ function Header() {
 		}
 	}
 
-	window.addEventListener('scroll', setFixed)
+	// window.addEventListener('scroll', setFixed)
 
 	return (
 		<>
