@@ -1,5 +1,11 @@
+import { useState } from 'react'
 import { Container } from '../../Container/Container'
+import { Button, Drawer } from 'antd';
+
 import {
+	HeaderMenu,
+	HeaderMenuItem,
+	HeaderMenuItemText,
 	HeaderNavBox,
 	HeaderNavCatagories,
 	HeaderNavCatagoriesItem,
@@ -15,20 +21,34 @@ import {
 import { headerNavCatagories, headerNavList } from '../../../data/headerData'
 import {
 	BasketIcon,
+	HeaderBurgerIcon,
 	HeaderNavLogo,
 	SearchIcon,
 	UserIcon
 } from '../../../assets/icons/HeaderIcon'
+import { HeaderMenuTelIcon } from '../../../assets/icons/HeaderMenuIcon';
+
 
 interface Prop {
 	fixed: boolean
 }
 
 function HeaderNav({ fixed }: Prop) {
+
+	const [open, setOpen] = useState(false);
+
+	const showDrawer = () => {
+		setOpen(true);
+	};
+
+	const onClose = () => {
+		setOpen(false);
+	};
+
 	const isNarrowScreen = globalThis.matchMedia('(max-width: 1250px)').matches
 	const isNarrowScreenIpad = globalThis.matchMedia('(max-width: 900px)').matches
 
-    console.log(isNarrowScreenIpad);
+	console.log(isNarrowScreenIpad);
 
 
 
@@ -36,18 +56,6 @@ function HeaderNav({ fixed }: Prop) {
 		<HeaderNavWrap fix={fixed === true ? 'fixed' : ''}>
 			<Container>
 				<HeaderNavBox>
-					{isNarrowScreenIpad ? (
-						<div style={{ display: 'flex' }}>
-							<HeaderNavFixIcon>
-								<SearchIcon width='24' height='24' color='#fff' />
-							</HeaderNavFixIcon>
-							<HeaderNavFixIcon>
-								<SearchIcon width='24' height='24' color='#fff' />
-							</HeaderNavFixIcon>
-						</div>
-					) : (
-						<></>
-					)}
 					{fixed === true || isNarrowScreen ? (
 						<HeaderNavFixLogo>
 							<HeaderNavLogo width='24' height='24' color='#fff' />
@@ -72,6 +80,9 @@ function HeaderNav({ fixed }: Prop) {
 							<HeaderNavFixIcon>
 								<SearchIcon width='24' height='24' color='#fff' />
 							</HeaderNavFixIcon>
+							<HeaderNavFixIcon onClick={showDrawer}>
+								<HeaderBurgerIcon width='24' height='24' color='#fff' />
+							</HeaderNavFixIcon>
 						</HeaderNavFixWrap>
 					) : (
 						<HeaderNavCatagories>
@@ -86,6 +97,14 @@ function HeaderNav({ fixed }: Prop) {
 					)}
 				</HeaderNavBox>
 			</Container>
+			<Drawer title="Basic Drawer" placement="right" onClose={onClose} open={open}>
+				<HeaderMenu>
+					<HeaderMenuItem>
+						<HeaderMenuTelIcon width='22px' height='22px' color='#333' />
+						<HeaderMenuItemText>+998902570131</HeaderMenuItemText>
+					</HeaderMenuItem>
+				</HeaderMenu>
+			</Drawer>
 		</HeaderNavWrap>
 	)
 }

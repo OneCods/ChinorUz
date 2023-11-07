@@ -174,4 +174,16 @@ function HeaderNavLogo({ width, height, color }: Props) {
 	)
 }
 
-export { BasketIcon, UserIcon, SearchIcon, CallIcon, TelegramIcon, HeaderNavLogo }
+function HeaderBurgerIcon({ width, height, color }: Props) {
+	return (
+		<svg width={width} height={height} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M20 18H4" stroke={color} stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M20 14H4" stroke={color} stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M20 10H4" stroke={color} stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+			<path d="M20 6H4" stroke={color} stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+		</svg>
+
+	)
+}
+
+export { BasketIcon, UserIcon, SearchIcon, CallIcon, TelegramIcon, HeaderNavLogo, HeaderBurgerIcon }

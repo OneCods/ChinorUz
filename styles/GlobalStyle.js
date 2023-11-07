@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Exo', sans-serif;
+    overflow-x: hidden;
 
     @media only screen and (max-width: 1250px) {
       margin-top: 30px;

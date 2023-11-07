@@ -168,3 +168,17 @@ export const HeaderNavFixIcon = styled.div`
 		}
 	}
 `
+
+export const HeaderMenu = styled.ul`
+    /* padding: 40px 20px; */
+`
+
+export const HeaderMenuItem = styled.li`
+	display: flex;
+	align-items: center;
+	gap: 0 10px;
+`
+
+export const HeaderMenuItemText = styled.p`
+	
+`
