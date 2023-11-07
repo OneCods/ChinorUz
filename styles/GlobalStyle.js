@@ -15,6 +15,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Exo', sans-serif;
     overflow-x: hidden;
+    touch-action: pan-x pan-y;
+
 
     @media only screen and (max-width: 1250px) {
       margin-top: 30px;
