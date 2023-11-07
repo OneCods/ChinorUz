@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 interface Props {
 	fix: string
+
 }
 
 export const HeaderNavWrap = styled.div<Props>`
@@ -170,15 +171,21 @@ export const HeaderNavFixIcon = styled.div`
 `
 
 export const HeaderMenu = styled.ul`
-    /* padding: 40px 20px; */
+    padding: 0px 10px;
 `
 
 export const HeaderMenuItem = styled.li`
 	display: flex;
 	align-items: center;
-	gap: 0 10px;
+	gap: 0 15px;
+
+	& + & {
+		margin-top: 25px;
+	}
 `
 
 export const HeaderMenuItemText = styled.p`
-	
+	font-size: 18px;
+	font-weight: 600;
+	color: #fff;
 `

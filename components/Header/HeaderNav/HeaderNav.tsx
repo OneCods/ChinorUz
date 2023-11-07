@@ -26,7 +26,7 @@ import {
 	SearchIcon,
 	UserIcon
 } from '../../../assets/icons/HeaderIcon'
-import { HeaderMenuTelIcon } from '../../../assets/icons/HeaderMenuIcon';
+import { HeaderMenuInfoIcon, HeaderMenuIphoneIcon, HeaderMenuSaleIcon, HeaderMenuTelIcon } from '../../../assets/icons/HeaderMenuIcon';
 
 
 interface Prop {
@@ -97,10 +97,23 @@ function HeaderNav({ fixed }: Prop) {
 					)}
 				</HeaderNavBox>
 			</Container>
-			<Drawer title="Basic Drawer" placement="right" onClose={onClose} open={open}>
+			<Drawer title="" placement="right" style={{backgroundColor: '#623e63',}} onClose={onClose} open={open}>
 				<HeaderMenu>
+				{/* 767676 */}
 					<HeaderMenuItem>
-						<HeaderMenuTelIcon width='22px' height='22px' color='#333' />
+						<HeaderMenuIphoneIcon width='24px' height='24px' color='#fff' />
+						<HeaderMenuItemText>Смартфоны и гаджеты</HeaderMenuItemText>
+					</HeaderMenuItem>
+					<HeaderMenuItem>
+						<HeaderMenuSaleIcon width='24px' height='24px' color='#fff' />
+						<HeaderMenuItemText> Акции и скидки</HeaderMenuItemText>
+					</HeaderMenuItem>
+					<HeaderMenuItem>
+						<HeaderMenuInfoIcon width='24px' height='24px' color='#fff' />
+						<HeaderMenuItemText>Информация</HeaderMenuItemText>
+					</HeaderMenuItem>
+					<HeaderMenuItem>
+						<HeaderMenuTelIcon width='24px' height='24px' color='#fff' />
 						<HeaderMenuItemText>+998902570131</HeaderMenuItemText>
 					</HeaderMenuItem>
 				</HeaderMenu>
