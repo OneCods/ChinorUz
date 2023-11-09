@@ -1,9 +1,14 @@
 import styled from 'styled-components'
 
+import ViewBg from '../../../assets/svg/view-user.svg';
+import BtnTelegram from '../../../assets/svg/telegram.svg';
+
 interface Props {
 	fix: string
-
 }
+
+console.log(ViewBg);
+
 
 export const HeaderNavWrap = styled.div<Props>`
 	display: flex;
@@ -170,8 +175,17 @@ export const HeaderNavFixIcon = styled.div`
 	}
 `
 
-export const HeaderMenu = styled.ul`
+export const HeaderMenuWrapper = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
     padding: 0px 10px;
+	height: 100%;
+	overflow-x: hidden;
+`
+
+export const HeaderMenu = styled.ul`
+
 `
 
 export const HeaderMenuItem = styled.li`
@@ -188,4 +202,32 @@ export const HeaderMenuItemText = styled.p`
 	font-size: 18px;
 	font-weight: 600;
 	color: #fff;
+`
+
+export const HeaderMenuBottom = styled.div`
+    position: relative;
+	 &::before {
+		content: "";
+		width: 300px;
+		height: 220px;
+		position: absolute;
+		bottom: 70%;
+		background-color: #000;
+		background: url(${ViewBg?.src});
+		background-size: cover;
+		z-index: 11;
+	 }
+`
+
+export const HeaderMenuBottomBtn = styled.a`
+	 position: relative;
+	 padding: 20px 0;
+	 width: 100%;
+	 text-align: center;
+	 color: #fff;
+	 font-size: 25px;
+	 border-radius: 15px;
+	 background-color: #1DA1F2;
+
+     
 `

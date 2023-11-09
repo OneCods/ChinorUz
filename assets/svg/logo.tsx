@@ -7,7 +7,7 @@ function LogoSvg() {
 			fill='none'
 			xmlns='http://www.w3.org/2000/svg'
 		>
-			<g clip-path='url(#clip0_4_548)'>
+			<g clipPath='url(#clip0_4_548)'>
 				<mask
 					id='mask0_4_548'
 					// style='mask-type:luminance'

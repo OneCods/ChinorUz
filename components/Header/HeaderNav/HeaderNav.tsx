@@ -4,8 +4,11 @@ import { Button, Drawer } from 'antd';
 
 import {
 	HeaderMenu,
+	HeaderMenuBottom,
+	HeaderMenuBottomBtn,
 	HeaderMenuItem,
 	HeaderMenuItemText,
+	HeaderMenuWrapper,
 	HeaderNavBox,
 	HeaderNavCatagories,
 	HeaderNavCatagoriesItem,
@@ -47,10 +50,6 @@ function HeaderNav({ fixed }: Prop) {
 
 	const isNarrowScreen = globalThis.matchMedia('(max-width: 1250px)').matches
 	const isNarrowScreenIpad = globalThis.matchMedia('(max-width: 900px)').matches
-
-	console.log(isNarrowScreenIpad);
-
-
 
 	return (
 		<HeaderNavWrap fix={fixed === true ? 'fixed' : ''}>
@@ -97,26 +96,31 @@ function HeaderNav({ fixed }: Prop) {
 					)}
 				</HeaderNavBox>
 			</Container>
-			<Drawer title="" placement="right" style={{backgroundColor: '#623e63',}} onClose={onClose} open={open}>
-				<HeaderMenu>
-				{/* 767676 */}
-					<HeaderMenuItem>
-						<HeaderMenuIphoneIcon width='24px' height='24px' color='#fff' />
-						<HeaderMenuItemText>Смартфоны и гаджеты</HeaderMenuItemText>
-					</HeaderMenuItem>
-					<HeaderMenuItem>
-						<HeaderMenuSaleIcon width='24px' height='24px' color='#fff' />
-						<HeaderMenuItemText> Акции и скидки</HeaderMenuItemText>
-					</HeaderMenuItem>
-					<HeaderMenuItem>
-						<HeaderMenuInfoIcon width='24px' height='24px' color='#fff' />
-						<HeaderMenuItemText>Информация</HeaderMenuItemText>
-					</HeaderMenuItem>
-					<HeaderMenuItem>
-						<HeaderMenuTelIcon width='24px' height='24px' color='#fff' />
-						<HeaderMenuItemText>+998902570131</HeaderMenuItemText>
-					</HeaderMenuItem>
-				</HeaderMenu>
+			<Drawer title="" placement="right" style={{ backgroundColor: '#623e63', }} onClose={onClose} open={open}>
+				<HeaderMenuWrapper>
+					<HeaderMenu>
+						{/* 767676 */}
+						<HeaderMenuItem>
+							<HeaderMenuIphoneIcon width='24px' height='24px' color='#fff' />
+							<HeaderMenuItemText>Смартфоны и гаджеты</HeaderMenuItemText>
+						</HeaderMenuItem>
+						<HeaderMenuItem>
+							<HeaderMenuSaleIcon width='24px' height='24px' color='#fff' />
+							<HeaderMenuItemText> Акции и скидки</HeaderMenuItemText>
+						</HeaderMenuItem>
+						<HeaderMenuItem>
+							<HeaderMenuInfoIcon width='24px' height='24px' color='#fff' />
+							<HeaderMenuItemText>Информация</HeaderMenuItemText>
+						</HeaderMenuItem>
+						<HeaderMenuItem>
+							<HeaderMenuTelIcon width='24px' height='24px' color='#fff' />
+							<HeaderMenuItemText>+998902570131</HeaderMenuItemText>
+						</HeaderMenuItem>
+					</HeaderMenu>
+					<HeaderMenuBottom>
+						<HeaderMenuBottomBtn>halta.uz</HeaderMenuBottomBtn>
+					</HeaderMenuBottom>
+				</HeaderMenuWrapper>
 			</Drawer>
 		</HeaderNavWrap>
 	)
