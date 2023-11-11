@@ -224,10 +224,19 @@ export const HeaderMenuBottomBtn = styled.a`
 	 padding: 20px 0;
 	 width: 100%;
 	 text-align: center;
-	 color: #fff;
+	 color: #1DA1F2;
 	 font-size: 25px;
 	 border-radius: 15px;
-	 background-color: #1DA1F2;
+	 background-color: #ffff;
 
-     
+     &::before {
+		content: "";
+		position: absolute;
+		top: 15px;
+		left: 20px;
+		width: 40px;
+		height: 40px;
+		background-image: url(${BtnTelegram?.src});
+		background-size: cover;
+	 }
 `
