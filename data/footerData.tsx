@@ -1,4 +1,4 @@
-const footerListData = [
+const footerListData: {name: String, link: String}[] = [
     {
         name: 'О компании',
         link: ''
@@ -20,3 +20,6 @@ const footerListData = [
         link: ''
     },
 ]
+
+export {footerListData}
+

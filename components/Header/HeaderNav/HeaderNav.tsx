@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Container } from '../../Container/Container'
+import { useState } from 'react';
+import { Container } from '../../Container/Container';
 import { Button, Drawer } from 'antd';
 
 import {
@@ -19,16 +19,17 @@ import {
 	HeaderNavItem,
 	HeaderNavList,
 	HeaderNavWrap
-} from './Style'
+} from './Style';
 
-import { headerNavCatagories, headerNavList } from '../../../data/headerData'
+import { headerNavCatagories, headerNavList } from '../../../data/headerData';
 import {
 	BasketIcon,
 	HeaderBurgerIcon,
 	HeaderNavLogo,
 	SearchIcon,
 	UserIcon
-} from '../../../assets/icons/HeaderIcon'
+} from '../../../assets/icons/HeaderIcon';
+
 import { HeaderMenuInfoIcon, HeaderMenuIphoneIcon, HeaderMenuSaleIcon, HeaderMenuTelIcon } from '../../../assets/icons/HeaderMenuIcon';
 
 
