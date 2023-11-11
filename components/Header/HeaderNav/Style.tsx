@@ -7,9 +7,6 @@ interface Props {
 	fix: string
 }
 
-console.log(ViewBg);
-
-
 export const HeaderNavWrap = styled.div<Props>`
 	display: flex;
 	width: 100%;
@@ -19,6 +16,7 @@ export const HeaderNavWrap = styled.div<Props>`
 	align-items: center;
 	height: 56px;
 	background-color: #623e63;
+	z-index: 111;
 
 	@media only screen and (max-width: 1250px) {
 		position: fixed;

@@ -2,20 +2,17 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
 
+  *::before,
+  *::after,
   * {
     margin: 0;
     padding: 0;
-  }
-
-  *::before,
-  *::after {
     box-sizing: border-box;
   }
 
   body {
     font-family: 'Exo', sans-serif;
-    overflow-x: hidden;
-    touch-action: pan-x pan-y;
+    /* overflow-x: hidden; */
 
 
     @media only screen and (max-width: 1250px) {
@@ -30,5 +27,13 @@ export const GlobalStyle = createGlobalStyle`
   a {
     display: inline-block;
     text-decoration: none;
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  img {
+    display: inline-block;
   }
 `

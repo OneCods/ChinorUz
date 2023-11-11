@@ -1,8 +1,14 @@
 import styled from "styled-components";
 
 export const FooterWrap = styled.footer`
+   
     padding: 60px 0;
     border-top: 1px solid #f1f1f6;
+
+    @media only screen and (max-width: 900px) {
+        border: none;
+        background-color: #623e63;
+    }
 `
 
 export const FooterWrapList = styled.ul`
@@ -26,6 +32,11 @@ export const FooterWrapListItem = styled.li`
     &:active {
         opacity: 0.4;
     }
+
+    @media only screen and (max-width: 900px) {
+        color: #fff;
+        opacity: 0.4;
+    }
 `
 
 export const FooterWrapTellContent = styled.div`
@@ -37,6 +48,11 @@ export const FooterWrapTellTitle = styled.div`
     font-size: 14px;
     line-height: 1.57;
     margin-bottom: 10px;
+
+    @media only screen and (max-width: 900px) {
+        color: #fff;
+        opacity: 0.4;
+    }
 `
 
 export const FooterWrapTell = styled.a`
@@ -45,6 +61,10 @@ export const FooterWrapTell = styled.a`
     line-height: 30px;
     color: #000;
     cursor: pointer;
+
+    @media only screen and (max-width: 900px) {
+        color: #fff;
+    }
 `
 
 export const FooterWrapCopyright = styled.p`
@@ -52,4 +72,9 @@ export const FooterWrapCopyright = styled.p`
     color: rgb(0, 0, 0, 0.5);
     font-size: 14px;
     line-height: 1.57;
+
+    @media only screen and (max-width: 900px) {
+        color: #fff;
+        opacity: 0.4;
+    }
 `
