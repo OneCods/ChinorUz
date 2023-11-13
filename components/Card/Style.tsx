@@ -19,7 +19,8 @@ export const CardItem = styled.li`
     width: 250px;
     height: 400px;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    background-color: white;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; */
     border-radius: 7px;
 
     @media only screen and (max-width: 555px) {

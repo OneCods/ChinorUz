@@ -13,6 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Exo', sans-serif;
     /* overflow-x: hidden; */
+    background-color: #F9F9FB;
 
 
     @media only screen and (max-width: 1250px) {

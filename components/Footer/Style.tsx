@@ -4,6 +4,7 @@ export const FooterWrap = styled.footer`
    
     padding: 60px 0;
     border-top: 1px solid #f1f1f6;
+    background-color: white;
 
     @media only screen and (max-width: 900px) {
         border: none;

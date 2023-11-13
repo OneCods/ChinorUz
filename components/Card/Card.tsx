@@ -2,6 +2,7 @@ import { CardItem, CardItemBottom, CardItemBottomBtn, CardItemBottomPrice, CardI
 import CardImg from "../../assets/img/laptop.jpeg";
 import { HeaderMenuSaleIcon } from "../../assets/icons/HeaderMenuIcon";
 import { BasketIcon } from "../../assets/icons/HeaderIcon";
+import Link from "next/link";
 
 
 function Card() {
@@ -13,7 +14,8 @@ function Card() {
             {
                 data.map((item, index) => {
                     return (
-                        <CardItem key={index}>
+                       <Link href={'/card_inner'} key={index}>
+                        <CardItem >
                             <CardItemImg src={CardImg.src} />
                             <CardItemContent>
                                 <CardItemName>Apple MacBook Air 13 MGND3 Gold (M1 8-Core, GPU 7-Core, 8GB, 256Gb)</CardItemName>
@@ -25,6 +27,7 @@ function Card() {
                                 </CardItemBottom>
                             </CardItemContent>
                         </CardItem>
+                       </Link>
                     )
                 })
             }
