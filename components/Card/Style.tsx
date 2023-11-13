@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const CardList = styled.ul`
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: center;
+    gap: 15px;
 `
 
 export const CardItem = styled.li`
@@ -11,7 +12,7 @@ export const CardItem = styled.li`
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 270px;
+    width: 250px;
     height: 400px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     border-radius: 7px;

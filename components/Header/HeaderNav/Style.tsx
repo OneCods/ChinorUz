@@ -11,6 +11,7 @@ export const HeaderNavWrap = styled.div<Props>`
 	display: flex;
 	width: 100%;
 	position: ${props => props.fix};
+	position: sticky;
 	top: 0;
 	width: 100%;
 	align-items: center;
